@@ -1,0 +1,339 @@
+/*-- scss:defaults --*/
+// Terracotta palette, shared by the homepage (assets/designs/terracotta.css) and all inner pages.
+$body-bg: #fbf3e8;
+$body-color: #302730;
+$primary: #a54a2f;
+$link-color: #a54a2f;
+$headings-font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+$headings-font-weight: 400;
+$font-family-sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+$navbar-bg: #fbf3e8;
+$footer-bg: #fbf3e8;
+$code-bg: #f3e8da;
+
+/*-- scss:rules --*/
+:root {
+  --ink: #302730;
+  --paper: #fbf3e8;
+  --accent: #a54a2f;     // text-safe clay (4.7:1 on paper)
+  --clay: #b8583b;       // decorative clay for rules and borders
+  --muted: #6a5c65;
+  --rule: #d9cbbc;
+  --tint: #f3e6d6;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, #title-block-header .title, .quarto-title .title {
+  font-weight: 400 !important;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+
+a { text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent); text-underline-offset: .2em; }
+a:hover { text-decoration-color: var(--accent); }
+
+.home-page #title-block-header {
+  display: none;
+}
+
+/* Title block: same voice as the homepage hero. */
+#title-block-header .title { font-size: clamp(2.2rem, 4vw, 3rem); letter-spacing: -.035em; }
+#title-block-header .subtitle { color: var(--muted); font-family: $font-family-sans-serif; font-size: 1.05rem; font-weight: 400; }
+
+.navbar {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper) !important;
+  box-shadow: none !important;
+}
+
+.navbar, .navbar .nav-link, .navbar .navbar-brand, .navbar a {
+  color: var(--ink) !important;
+}
+
+.navbar .navbar-title {
+  font-family: $headings-font-family;
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -.03em;
+}
+
+.navbar .navbar-nav .nav-link .menu-text {
+  font-size: .75rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus, .navbar a:hover, .navbar a:focus,
+.navbar .nav-link.active, .navbar .nav-link.active .menu-text {
+  color: var(--accent) !important;
+}
+
+.navbar .nav-link.active .menu-text { text-decoration: underline; text-decoration-color: var(--clay); text-underline-offset: .45em; }
+
+.nav-footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: .8rem; }
+.nav-footer a { color: var(--muted) !important; }
+
+/* Publication and policy link buttons: the same quiet outline style as the Data tab. */
+.btn.btn-primary, .btn.btn-outline-dark {
+  padding: .22rem .65rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--accent);
+  font-size: .84rem;
+}
+.btn.btn-primary:hover, .btn.btn-outline-dark:hover, .btn.btn-primary:focus-visible, .btn.btn-outline-dark:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+blockquote { border-left: 3px solid var(--clay); color: var(--muted); }
+
+.publication-highlights {
+  margin: 1.5rem 0 3.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.publication-highlight {
+  display: grid;
+  grid-template-columns: minmax(9rem, .55fr) minmax(0, 1.45fr);
+  gap: 1rem 2rem;
+  align-items: baseline;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.publication-highlight h3, .publication-highlight p {
+  margin: 0;
+}
+
+.publication-highlight h3 { font-size: 1.2rem; }
+
+.publication-highlight p { line-height: 1.6; }
+
+.about-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(10rem, 14rem);
+  gap: clamp(2rem, 7vw, 6rem);
+  align-items: start;
+}
+
+.about-intro h2 { margin-top: 0; }
+
+.about-intro p:has(> img.about-portrait), .about-intro p:has(> img.about-snooker) { margin: 0; }
+
+.about-photos { display: grid; gap: 1rem; align-content: start; }
+
+img.about-snooker {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+img.about-portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 15%;
+  border-radius: 4px;
+}
+
+.about-portrait-placeholder {
+  display: grid;
+  aspect-ratio: 4 / 5;
+  place-content: center;
+  gap: .3rem;
+  border: 1px solid var(--clay);
+  color: var(--clay);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-portrait-placeholder > :last-child {
+  color: var(--ink);
+  font-size: .62rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .about-intro, .publication-highlight { grid-template-columns: 1fr; }
+  .about-portrait-placeholder, img.about-portrait { width: min(13rem, 100%); }
+  .about-photos { grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); align-items: end; }
+}
+
+/* --- Data tab (list of datasets, Helveston-style link rows) ---------------- */
+.data-list { margin-top: 2rem; border-top: 1px solid var(--rule); }
+
+.data-entry {
+  padding: 1.6rem 0 1.7rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.data-entry p { margin: 0 0 .6rem; line-height: 1.6; }
+
+a.data-title {
+  font-family: $headings-font-family;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+a.data-title:hover { color: var(--accent); }
+
+.data-entry p:has(> a.data-title) { margin-bottom: .5rem; }
+
+.data-entry p:nth-of-type(2) { color: var(--muted); font-size: .92rem; }
+
+.data-links p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: .9rem 0 0;
+}
+
+.data-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .22rem .65rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 4px;
+  color: var(--accent);
+  font-size: .84rem;
+  text-decoration: none;
+  transition: background .15s, color .15s;
+}
+
+.data-links a:hover, .data-links a:focus-visible {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* --- Historical GDP explorer -------------------------------------------- */
+.gdp-explorer { margin: 1rem 0 2rem; }
+
+.gdp-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: .75rem 1.25rem;
+  margin-bottom: .75rem;
+}
+
+.gdp-year { display: grid; gap: .15rem; flex: 1 1 16rem; margin: 0; font-size: .85rem; }
+.gdp-year output { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--accent); font-size: 1.05rem; }
+.gdp-year input { width: 100%; accent-color: var(--accent); }
+
+.gdp-segment { display: inline-flex; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+.gdp-segment button {
+  padding: .3rem .7rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: .82rem;
+}
+.gdp-segment button + button { border-left: 1px solid var(--rule); }
+.gdp-segment button:hover { background: var(--tint); }
+.gdp-segment button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+.gdp-map-wrap { position: relative; }
+
+.gdp-map {
+  height: clamp(340px, 62vh, 560px);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: #f1e8dc;
+}
+
+.gdp-status {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  color: var(--muted);
+}
+
+.gdp-legend {
+  position: absolute;
+  right: .6rem;
+  bottom: 1.6rem;
+  z-index: 500;
+  width: 15rem;
+  padding: .5rem .65rem .4rem;
+  background: rgba(255, 255, 255, .92);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  font-size: .72rem;
+}
+.gdp-legend:empty { display: none; }
+.gdp-legend-title { margin-bottom: .3rem; font-weight: 700; }
+.gdp-legend-bar { height: .55rem; border-radius: 2px; }
+.gdp-legend-ticks { display: flex; justify-content: space-between; margin-top: .2rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.gdp-tip { font-size: .8rem; line-height: 1.4; }
+.gdp-tip-note { color: var(--muted); font-size: .74rem; }
+
+.gdp-hint { margin: .5rem 0 0; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+
+.gdp-subhead { margin: 2rem 0 .6rem; font-size: 1.2rem; }
+
+.gdp-picker { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-bottom: .5rem; }
+.gdp-picker input {
+  flex: 0 1 18rem;
+  padding: .32rem .6rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: #fff;
+  font-size: .88rem;
+}
+.gdp-chips { display: flex; flex-wrap: wrap; gap: .35rem; }
+.gdp-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  padding: .12rem .2rem .12rem .55rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: #fff;
+  font-size: .8rem;
+}
+.gdp-chip button {
+  width: 1.3rem;
+  height: 1.3rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  line-height: 1;
+}
+.gdp-chip button:hover { background: var(--tint); color: var(--ink); }
+
+.gdp-chart { min-height: 300px; }
+.gdp-chart figure, .gdp-chart svg { max-width: 100%; }
+.gdp-empty { padding: 3rem 0; color: var(--muted); text-align: center; }
+
+.gdp-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 0; }
+.gdp-link-button {
+  padding: .25rem .65rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ink);
+  font-size: .82rem;
+}
+.gdp-link-button:hover { border-color: var(--accent); color: var(--accent); }
+
+.gdp-explorer :focus-visible { outline: 2px solid var(--clay); outline-offset: 2px; }
+
+/* Publications: years (h3) and paper titles (h4) inside the peer-reviewed section. */
+#peer-reviewed-research h3 { margin-top: 2.2rem; font-size: 1.5rem; }
+#peer-reviewed-research h4 { margin-top: 1.6rem; font-size: 1.2rem; line-height: 1.35; }

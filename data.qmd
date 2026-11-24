@@ -1,0 +1,27 @@
+---
+title: "Data"
+subtitle: "Open datasets and interactive explorers"
+toc: false
+---
+
+Datasets from my research, free to use and reuse under open licences, with an interactive explorer, a direct download, and the paper describing how they were built. Replication code is on [GitHub](https://github.com/philmkoch){target="_blank"}.
+
+::: {.data-list}
+
+::: {.data-entry}
+[Historical GDP per capita for Europe and North America, 1300–2000](data/historical-gdp/index.qmd){.data-title}
+
+Koch, P., Stojkoski, V., & Hidalgo, C. A. (2024). Augmenting the availability of historical GDP per capita estimates through machine learning. *Proceedings of the National Academy of Sciences*, 121(39), e2402060121.
+
+Machine-learning estimates of GDP per capita for 1,037 countries and regions, in 50-year steps over seven centuries, combined with the source data they were trained on. Estimates come with 90% confidence intervals.
+
+::: {.data-links}
+[[]{.bi .bi-map} Explore](data/historical-gdp/index.qmd)
+[[]{.bi .bi-box-arrow-up-right} Paper](https://www.pnas.org/doi/10.1073/pnas.2402060121){target="_blank"}
+[[]{.bi .bi-github} Code & Data](https://github.com/philmkoch/historicalGDPpc){target="_blank"}
+[[]{.bi .bi-download} CSV](data/historical-gdp/historical-gdppc.csv){download="historical-gdppc.csv"}
+[[]{.bi .bi-quote} Cite](data/historical-gdp/index.qmd#how-to-cite)
+:::
+:::
+
+:::

@@ -1,0 +1,12 @@
+---
+title: "Design alternatives"
+toc: false
+---
+
+# Homepage alternatives
+
+Terracotta is now the selected direction for the launch homepage. These working pages retain the three visual systems as local references.
+
+1. [Terracotta — editorial and warm](terracotta.qmd)
+2. [Cobalt — precise and civic](cobalt.qmd)
+3. [Moss — quiet and field-oriented](moss.qmd)

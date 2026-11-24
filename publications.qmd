@@ -1,0 +1,121 @@
+---
+title: "Publications"
+subtitle: "Highlights and peer-reviewed research"
+toc: true
+---
+
+Peer-reviewed work on measuring economies with new data, economic complexity, the geography of knowledge, and global value chains. For citations, see [Google Scholar](https://scholar.google.com/citations?user=FHMRb28AAAAJ){target="_blank"}.
+
+## Highlights
+
+::: {.publication-highlights}
+::: {.publication-highlight}
+### Historical GDP {#historical-gdp-outcome}
+
+*PNAS, 2024.* Expanded historical GDP-per-capita coverage for places and periods with limited conventional data. [Publication](#historical-gdp) · [Data and code](https://github.com/philmkoch/historicalGDPpc){target="_blank"} · [Explorer](data/historical-gdp/index.qmd)
+:::
+
+::: {.publication-highlight}
+### Digital trade {#digital-trade-outcome}
+
+*Nature Communications, 2024.* Produced bilateral estimates of digital-product trade from corporate revenue data, showing a more concentrated and faster-growing trade geography. [Publication](#digital-trade)
+:::
+
+::: {.publication-highlight}
+### Complexity and value added {#value-added-complexity-outcome}
+
+*Economics Letters, 2021.* Introduced a value-added export approach to economic complexity, motivated by global value chains, whose rankings explain growth better than gross-export measures. [Publication](#value-added-complexity)
+:::
+:::
+
+## Peer-reviewed research {#peer-reviewed-research}
+
+### 2025
+
+#### Trading Bits for Atoms: How Digital Products Are Reshaping the Global Economy
+
+Hidalgo, C., Koch, P., Coll, E., & Stojkoski, V. (2025). *Trading Bits for Atoms: How Digital Products Are Reshaping the Global Economy.* Communications of the ACM, 68, 34–36.
+
+[Article](https://dl.acm.org/doi/10.1145/3768180){.btn .btn-outline-dark target="_blank"}
+
+#### Mapping CO2 emissions in Global Value Chains: Does a value-added smile curve imply an emissions frown curve? {#value-chains}
+
+Schwarzbauer, W., Bittó, V., Koch, P., & Steininger, J. (2025). *Mapping CO2 emissions in Global Value Chains: Does a value-added smile curve imply an emissions frown curve?* Structural Change and Economic Dynamics, 75, 332–348.
+
+Global value chains play a central role in trade. This work maps embodied CO2 emissions across production stages and asks whether their distribution differs from the well-known value-added smile curve. It finds that high emission intensities cluster in earlier production stages, while later stages have lower intensities, with tentative evidence of a frown-curve pattern.
+
+[Article](https://doi.org/10.1016/j.strueco.2025.08.009){.btn .btn-primary target="_blank"}
+[PDF](s/1-s20-S0954349X25001390-main.pdf){.btn .btn-outline-dark}
+
+### 2024
+
+#### Augmenting the availability of historical GDP per capita estimates through machine learning {#historical-gdp}
+
+Koch, P., Stojkoski, V., & Hidalgo, C. A. (2024). *Augmenting the availability of historical GDP per capita estimates through machine learning.* Proceedings of the National Academy of Sciences, 121(39), e2402060121.
+
+We use biographical data to estimate historical GDP per capita for countries and regions where conventional data are unavailable. An elastic-net model explains 90% of the variation in known historical income levels and produces estimates that are externally validated against four proxies of economic output.
+
+[Open-access article](https://www.pnas.org/doi/10.1073/pnas.2402060121){.btn .btn-primary target="_blank"}
+[Data and code](https://github.com/philmkoch/historicalGDPpc){.btn .btn-outline-dark target="_blank"}
+[Explorer](data/historical-gdp/index.qmd){.btn .btn-outline-dark}
+[Radio interview — German](https://oe1.orf.at/programm/20240920/769490/Das-BIP-in-der-Geschichte){.btn .btn-outline-dark target="_blank"}
+
+#### Estimating digital product trade through corporate revenue data {#digital-trade}
+
+Stojkoski, V., Koch, P., Coll, E., & Hidalgo, C. A. (2024). *Estimating digital product trade through corporate revenue data.* Nature Communications, 15, 5262.
+
+This work estimates bilateral trade in digital products from the corporate revenues of large digital firms. The resulting data show that digital-product exports are more spatially concentrated and grow faster than trade in physical goods; they can also change measured trade balances.
+
+[Open-access article](https://www.nature.com/articles/s41467-024-49141-z){.btn .btn-primary target="_blank"}
+
+### 2023
+
+#### The Role of Immigrants, Emigrants, and Locals in the Historical Formation of European Knowledge Agglomerations
+
+Koch, P., Stojkoski, V., & Hidalgo, C. A. (2023). *The Role of Immigrants, Emigrants, and Locals in the Historical Formation of European Knowledge Agglomerations.* Regional Studies, 58(9), 1659–1673.
+
+Using data on more than 22,000 historical individuals, we estimate the contribution of immigrants, emigrants, and locals to the knowledge specialisation of European regions. Regions are more likely to develop or retain a specialisation when they receive immigrants with relevant or related knowledge.
+
+[Article](https://www.tandfonline.com/doi/full/10.1080/00343404.2023.2275571){.btn .btn-primary target="_blank"}
+[PDF](s/The-role-of-immigrants-emigrants-and-locals-in-the-historical-formation-of-European-knowledge-agglom.pdf){.btn .btn-outline-dark}
+[Podcast](https://open.spotify.com/episode/0qfz23vWo1X4fAb2Jh6YlQ?si=IlKVHcnBTZiPz7fPN-7yeg){.btn .btn-outline-dark target="_blank"}
+[Poster](s/20230608_Poster.png){.btn .btn-outline-dark}
+
+#### Multidimensional economic complexity and inclusive green growth
+
+Stojkoski, V., Koch, P., & Hidalgo, C. A. (2023). *Multidimensional economic complexity and inclusive green growth.* Communications Earth & Environment, 4, 130.
+
+We combine trade data with patent applications and research publications to construct multidimensional measures of economic complexity. Complexity measures that combine trade and patent data improve the explanation of future growth and income inequality, while countries that score highly across all three dimensions tend to have lower emission intensities.
+
+[Open-access article](https://www.nature.com/articles/s43247-023-00770-0){.btn .btn-primary target="_blank"}
+
+### 2022
+
+#### Park & Ride facilities and suburban sprawl
+
+Schwarzbauer, W., Koch, P., & Wolf, M. (2022). *Park & Ride facilities and suburban sprawl.* European Planning Studies, 30(7), 1378–1398.
+
+Using fine-grained grid population data and parking-capacity expansions at seven facilities around Vienna, we estimate that more remote Park & Ride expansion caused population growth in neighbouring municipalities relative to comparison locations.
+
+[Article](https://www.tandfonline.com/doi/abs/10.1080/09654313.2021.1998384){.btn .btn-primary target="_blank"}
+[PDF](s/Park-Ride-facilities-and-suburban-sprawl.pdf){.btn .btn-outline-dark}
+
+### 2021
+
+#### Economic complexity and growth: Can value-added exports better explain the link? {#value-added-complexity}
+
+Koch, P. (2021). *Economic complexity and growth: Can value-added exports better explain the link?* Economics Letters, 198, 109682.
+
+This paper introduces a value-added export approach to economic complexity, motivated by global value chains and the limitations of gross-export measures. The resulting rankings differ from established metrics and have stronger explanatory power for growth in the studied sample.
+
+[Article](https://doi.org/10.1016/j.econlet.2020.109682){.btn .btn-primary target="_blank"}
+[PDF](s/1-s20-S0165176520304420-main.pdf){.btn .btn-outline-dark}
+
+#### Yet another space: Why the Industry Space adds value to the understanding of structural change and economic development
+
+Koch, P., & Schwarzbauer, W. (2021). *Yet another space: Why the Industry Space adds value to the understanding of structural change and economic development.* Structural Change and Economic Dynamics, 59, 198–213.
+
+We introduce the Industry Space, a visualisation based on value-added exports that complements the gross-export-based Product Space. It links 51 industries by the similarity of their required capabilities and reveals differences between global and national value chains.
+
+[Article](https://www.sciencedirect.com/science/article/abs/pii/S0954349X21001132){.btn .btn-primary target="_blank"}
+[PDF](s/koch-and-schwarzbauer-2021-yet-another-space-why-the-industry-space-adds-value-2.pdf){.btn .btn-outline-dark}

@@ -1,0 +1,45 @@
+---
+title: "Philipp Koch"
+page-layout: full
+toc: false
+format:
+  html:
+    css:
+      - assets/designs/terracotta.css
+      - assets/designs/minimal-override.css
+    body-classes: "design-option terracotta"
+---
+
+```{=html}
+<div class="option-shell">
+<main>
+<section class="hero" aria-labelledby="home-title">
+<div class="hero-text">
+<h1 id="home-title">Hi, I&rsquo;m Philipp.</h1>
+<p class="hero-lede">I&rsquo;m an economist and data scientist in Vienna. I use machine learning and other empirical methods to understand economic development, drawing on conventional economic data as well as unconventional sources such as the biographies of famous people.</p>
+<p class="academic-role">Head of Data Science, <a href="https://ecoaustria.ac.at/">EcoAustria</a> · Lecturer, WU Vienna · Affiliate, <a href="https://centerforcollectivelearning.org/">Center for Collective Learning</a></p>
+<p class="hero-links"><a href="about.html">About me</a><a href="https://scholar.google.com/citations?user=FHMRb28AAAAJ">Google Scholar</a><a href="s/CV_PK-8.pdf">CV</a></p>
+</div>
+<img class="hero-portrait" src="assets/images/philipp-koch-casual-600.jpg" srcset="assets/images/philipp-koch-casual-600.jpg 600w, assets/images/philipp-koch-casual-1000.jpg 1000w" sizes="(max-width: 760px) 11rem, 16rem" width="600" height="1025" alt="Philipp Koch leaning on a railing by the water under a willow tree">
+</section>
+<section class="selected-work" aria-labelledby="selected-heading">
+<h2 id="selected-heading">Selected work</h2>
+<ol>
+<li><a href="data/historical-gdp/index.html"><span class="venue">PNAS 2024 · open data</span><strong>Historical GDP per capita through machine learning</strong><span>Estimates for 1,037 European and North American countries and regions over seven centuries, with an interactive explorer.</span></a></li>
+<li><a href="https://www.nature.com/articles/s41467-024-49141-z"><span class="venue">Nature Communications 2024</span><strong>Estimating digital product trade</strong><span>Bilateral trade in digital products, estimated from the corporate revenues of large digital firms.</span></a></li>
+<li><a href="https://doi.org/10.1016/j.econlet.2020.109682"><span class="venue">Economics Letters 2021</span><strong>Economic complexity and value-added exports</strong><span>A value-added export approach to economic complexity, with stronger explanatory power for growth than gross-export measures.</span></a></li>
+</ol>
+<p class="more"><a href="publications.html">All publications</a> · <a href="policy.html">Policy reports</a></p>
+</section>
+<section class="news-feed" aria-labelledby="news-heading">
+<h2 id="news-heading">News</h2>
+<!-- Add future items above this one, using the same article structure. -->
+<article><time datetime="2026-11">Nov 2026</time><div><h3>Historical GDP explorer moves to this site</h3><p>The <a href="data/historical-gdp/index.html">interactive explorer</a> for our PNAS dataset now loads in seconds, with downloads and shareable views.</p></div></article>
+<article><time datetime="2026">2026</time><div><h3>Economic effects of data centres</h3><p>New <a href="policy.html#economic-effects-of-data-centres">study for the Vienna Business Agency</a>.</p></div></article>
+<article><time datetime="2026">2026</time><div><h3>Computing capacity and digital competitiveness</h3><p>New <a href="policy.html#computing-capacity-as-a-driver-of-digital-competitiveness">EcoAustria Policy Note 66</a> with N. Graf and S. Rabong.</p></div></article>
+<article><time datetime="2025">2025</time><div><h3>Emissions along global value chains</h3><p><a href="publications.html#value-chains">Published in Structural Change and Economic Dynamics</a>: does a value-added smile curve imply an emissions frown curve?</p></div></article>
+<article><time datetime="2025-04">Apr 2025</time><div><h3>Historical GDP dataset, version 3</h3><p>Updated estimates and replication code on <a href="https://github.com/philmkoch/historicalGDPpc">GitHub</a>.</p></div></article>
+</section>
+</main>
+</div>
+```

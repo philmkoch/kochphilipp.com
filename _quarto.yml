@@ -1,0 +1,63 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - s/**
+    - data/historical-gdp/*.csv
+    - data/historical-gdp/*.geojson
+    - assets/gdp-explorer.js
+  render:
+    - index.qmd
+    - publications.qmd
+    - data.qmd
+    - data/historical-gdp/index.qmd
+    - policy.qmd
+    - about.qmd
+
+website:
+  title: "Philipp Koch"
+  site-url: "https://www.kochphilipp.com"
+  description: "Economist using machine learning and new data sources to measure economic development, trade, innovation, and economic history."
+  navbar:
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: publications.qmd
+        text: Publications
+      - href: data.qmd
+        text: Data
+      - href: policy.qmd
+        text: Policy
+      - href: about.qmd
+        text: About
+    right:
+      - text: CV
+        href: s/CV_PK-8.pdf
+      - icon: envelope
+        aria-label: Email Philipp Koch
+        href: "mailto:philipp.koch@ecoaustria.ac.at"
+      - icon: mortarboard
+        aria-label: Google Scholar
+        href: "https://scholar.google.com/citations?user=FHMRb28AAAAJ"
+      - icon: linkedin
+        aria-label: LinkedIn
+        href: "https://www.linkedin.com/in/philipp-koch-70ab9116b/"
+      - icon: github
+        aria-label: GitHub
+        href: "https://github.com/philmkoch"
+  page-footer:
+    left: "© Philipp Koch"
+    right:
+      - text: Email
+        href: "mailto:philipp.koch@ecoaustria.ac.at"
+      - text: GitHub
+        href: "https://github.com/philmkoch"
+
+format:
+  html:
+    theme: [cosmo, assets/styles.scss]
+    css: assets/styles.css
+    toc: true
+    smooth-scroll: true
+    link-external-newwindow: true

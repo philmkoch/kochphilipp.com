@@ -1,0 +1,111 @@
+---
+title: "Policy"
+subtitle: "Economic analysis and policy reports"
+toc: true
+---
+
+Applied analysis at [EcoAustria](https://ecoaustria.ac.at/){target="_blank"} on trade, industrial and climate policy, digital competitiveness, and AI, including studies commissioned by the Austrian Federal Chancellery, federal ministries, and the Vienna Business Agency. Most reports are in German.
+
+## 2026
+
+### Economic effects of data centres
+
+Koch, P. (2026). Commissioned by the Vienna Business Agency.
+
+[Study — German](https://ecoaustria.ac.at/wp-content/uploads/2026/11/EcoAustria_Studie_Rechenzentren.pdf){.btn .btn-primary target="_blank"}
+
+### Deregulation and the reduction of bureaucracy in Austria
+
+Graf, N., Koch, P., & Köppl-Turyna, M. (2026). Commissioned by the Federal Ministry for European and International Affairs.
+
+[Study page](https://ecoaustria.ac.at/deregulierung/){.btn .btn-primary target="_blank"}
+
+### Computing capacity as a driver of digital competitiveness
+
+Koch, P., Graf, N., & Rabong, S. (2026). *EcoAustria Policy Note 66.*
+
+[Policy note — German](https://ecoaustria.ac.at/wettbewerbsfaehigkeit-des-wirtschafts-und-industriestandorts-und-anforderungen-einer-industriestrategie-2/){.btn .btn-primary target="_blank"}
+
+## 2025
+
+### Technological change with AI: Effects on international trade of Austrian firms
+
+Koch, P., Bittó, V., Gillesberger, M., Graf, N., & Schwarzbauer, W. (2025). Study commissioned by the Austrian Federal Ministry of Economy.
+
+[Study — German](https://ecoaustria.ac.at/wp-content/uploads/2026/11/EcoAustria_Endbericht_KI_Ausenhandel.pdf){.btn .btn-primary target="_blank"}
+
+### AI Revolution: Impact on and Chances for Austria
+
+Graf, N., Koch, P., & Köppl-Turyna, M. (2025). Study commissioned by the Austrian Federal Chancellery.
+
+[Study page — German](https://www.digitalaustria.gv.at/themen/kuenstliche-intelligenz/ki-monitor/eco-austria-studie.html){.btn .btn-outline-dark target="_blank"}
+
+## 2024
+
+### Future perspectives on Austria's export portfolio
+
+Bittó, V., Koch, P., & Schwarzbauer, W. (2024). *FIW Research Report 01-2024.* Study commissioned by the Federal Ministry of Labour and Economy.
+
+[Report page — German](https://www.fiw.ac.at/publications/perspektiven-des-zukuenftigen-produktportfolios-des-oesterreichischen-aussenhandels/){.btn .btn-outline-dark target="_blank"}
+
+## 2023
+
+### Considering the interdependencies between industrial policy, innovation policy and climate policy
+
+Bittó, V., Koch, P., & Schwarzbauer, W. (2023). *EcoAustria Policy Note 53.*
+
+[PDF — German](https://ecoaustria.ac.at/wp-content/uploads/2023/09/1_2023_April_EcoAustria-PolicyNote_tech_klima_industrie_PN53.pdf){.btn .btn-outline-dark target="_blank"}
+
+### Economic potentials of trade relationships between Austria and South Korea
+
+Schwarzbauer, W., Bittó, V., & Koch, P. (2023). Study commissioned by Samsung.
+
+[PDF — German](https://ecoaustria.ac.at/wp-content/uploads/2023/08/EcoAustria-2022-AUT_KOR_trade_relationship_31032023.pdf){.btn .btn-outline-dark target="_blank"}
+
+## 2021
+
+### On the significance of free trade and global value chains for Germany and Austria
+
+Schwarzbauer, W., & Koch, P. (2021). *List Forum*, 46, 451–470.
+
+[Article](https://link.springer.com/article/10.1007/s41025-021-00223-6){.btn .btn-outline-dark target="_blank"}
+
+### Estimating the insolvency backlog and the share of firms with long-term negative equity after COVID-19 in Austria
+
+Köppl-Turyna, M., Koch, P., et al. (2021). Study commissioned by the Austrian Federal Ministry of Digitalization and Economy.
+
+[Study page — German](https://www.bmwet.gv.at/Services/Publikationen/allgemeine-wirtschaftspolitik/Insolvenzueberhang.html){.btn .btn-outline-dark target="_blank"}
+
+### Internationally mobile workforce: A new view on competitiveness
+
+Koch, P., & Köppl-Turyna, M. (2021). *EcoAustria Policy Note 47.*
+
+[PDF — German](https://ecoaustria.ac.at/wp-content/uploads/2021/06/PN47.pdf){.btn .btn-outline-dark target="_blank"}
+
+### COVID-19 measures: International comparison of COVID-19 support measures given the country-specific importance of automatic stabilizers
+
+Köppl-Turyna, M., et al. (2021). Study commissioned by the Austrian Federal Ministry of Finance.
+
+[PDF — German](https://ecoaustria.ac.at/wp-content/uploads/2021/04/EcoAustria-Studie-2021-COVID-19-Massnahmen.pdf){.btn .btn-outline-dark target="_blank"}
+
+### Austria’s potential for a more environmentally friendly manufacturing industry
+
+Schwarzbauer, W., & Koch, P. (2021). *EcoAustria Analysis 12.*
+
+[PDF — German](https://ecoaustria.ac.at/wp-content/uploads/2021/01/Kurzanalyse_12.pdf){.btn .btn-outline-dark target="_blank"}
+
+## 2020
+
+### Tenant’s paradise Austria? Myth and reality
+
+Thomas, T., Koch, P., & Schwarzbauer, W. (2020). *List Forum*, 45, 319–346.
+
+[Article](https://link.springer.com/article/10.1007/s41025-019-00168-x){.btn .btn-outline-dark target="_blank"}
+
+## 2019
+
+### Thoughts on the regulation of digital platforms
+
+Thomas, T., Koch, P., & Schwarzbauer, W. (2019). *EcoAustria Policy Note 34.*
+
+[PDF — German](https://ecoaustria.ac.at/wp-content/uploads/2019/08/EcoAustria-Policy-Note-2019-Online-Platforms-Sharing-Economy.pdf){.btn .btn-outline-dark target="_blank"}

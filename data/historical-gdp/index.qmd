@@ -1,0 +1,117 @@
+---
+title: "Historical GDP per capita"
+subtitle: "Countries and regions in Europe and North America, 1300–2000"
+toc: true
+toc-location: right
+page-layout: article
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+        <link rel="preconnect" href="https://server.arcgisonline.com">
+---
+
+How rich were Tuscany, Holland, or Vienna in 1500? For most places and periods, conventional records cannot say. We estimated historical GDP per capita from the places of birth, death, and occupations of hundreds of thousands of famous historical figures, and released the estimates together with the source data the model was trained on.
+
+::: {.data-links}
+[[]{.bi .bi-box-arrow-up-right} Paper](https://www.pnas.org/doi/10.1073/pnas.2402060121){target="_blank"}
+[[]{.bi .bi-github} Code & Data](https://github.com/philmkoch/historicalGDPpc){target="_blank"}
+[[]{.bi .bi-download} CSV](historical-gdppc.csv){download="historical-gdppc.csv"}
+[[]{.bi .bi-quote} Cite](#how-to-cite)
+:::
+
+## Explorer {#explorer}
+
+```{=html}
+<div class="gdp-explorer" id="gdp-explorer">
+  <div class="gdp-controls" role="group" aria-label="Map controls">
+    <label class="gdp-year">
+      <span>Year <output id="gdp-year-value">1750</output></span>
+      <input type="range" id="gdp-year" min="1300" max="2000" step="50" value="1750">
+    </label>
+    <div class="gdp-segment" role="radiogroup" aria-label="Geographic level">
+      <button type="button" data-level="region" aria-pressed="true">Regions</button>
+      <button type="button" data-level="country" aria-pressed="false">Countries</button>
+    </div>
+    <div class="gdp-segment" aria-label="Zoom to">
+      <button type="button" data-zoom="europe">Europe</button>
+      <button type="button" data-zoom="america">North America</button>
+    </div>
+  </div>
+
+  <div class="gdp-map-wrap">
+    <div id="gdp-map" class="gdp-map" aria-label="Map of GDP per capita by place"></div>
+    <div class="gdp-legend" id="gdp-legend" aria-hidden="true"></div>
+    <p class="gdp-status" id="gdp-status">Loading data…</p>
+  </div>
+  <p class="gdp-hint">Hover over a place to see its value; click it to add it to the chart below. Values are in 2011 international dollars, coloured on a log scale that adjusts to each year. Places without colour have no value for that year.</p>
+
+  <h3 class="gdp-subhead">Over time</h3>
+  <div class="gdp-picker">
+    <label for="gdp-search" class="visually-hidden">Add a country or region</label>
+    <input id="gdp-search" type="search" list="gdp-places" placeholder="Add a country or region…" autocomplete="off">
+    <datalist id="gdp-places"></datalist>
+    <div class="gdp-chips" id="gdp-chips" aria-live="polite"></div>
+  </div>
+  <div id="gdp-chart" class="gdp-chart"></div>
+  <p class="gdp-hint">Filled dots are source data; open dots are model estimates, shaded with their 90% confidence interval.</p>
+  <p class="gdp-actions">
+    <button type="button" id="gdp-download-selection" class="gdp-link-button"><i class="bi bi-download"></i> Download selected places (CSV)</button>
+    <button type="button" id="gdp-copy-link" class="gdp-link-button"><i class="bi bi-link-45deg"></i> Copy link to this view</button>
+  </p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script type="module" src="../../assets/gdp-explorer.js"></script>
+```
+
+## About the data {#about}
+
+The dataset contains **5,700 observations** for **1,037 countries and regions** at 50-year intervals between 1300 and 2000:
+
+- **1,574 source observations**, collected from Eurostat, the Maddison Project, Rosés & Wolf, the US Bureau of Economic Analysis, Statistics Canada, Rosstat, and further sources listed in the paper.
+- **4,126 out-of-sample estimates** from an elastic-net model that uses biographical data on the births, deaths, and occupations of notable people. The model explains about 90% of the variation in known historical incomes, and the estimates are validated against four external proxies of economic output. Each estimate has a 90% confidence interval.
+
+Regions are NUTS-2 regions in Europe (first-level administrative regions for Belarus, Bosnia and Herzegovina, Russia, and Ukraine) and metropolitan areas in the United States and Canada. Before 2000, some countries are shown within historical boundaries: England, Wales, and Scotland instead of the United Kingdom until 1700; Holland and the rest of the Netherlands, Kraków and the rest of Poland, and northern and southern Italy until 1800 or 1850; and Czechoslovakia from 1850 to 1950.
+
+Full methods, sources, and validation are described in the [open-access paper](https://www.pnas.org/doi/10.1073/pnas.2402060121){target="_blank"}. Replication code is on [GitHub](https://github.com/philmkoch/historicalGDPpc){target="_blank"}.
+
+This page shows version 3 of the dataset (April 2025). It corrects the source labels of four observations (the Netherlands and Poland in 2000 are Maddison Project data; the rest of the Netherlands in 1800 and the rest of Poland in 1850 are model estimates).
+
+### Variables
+
+| Column | Description |
+|---|---|
+| `id` | Place code: ISO3 for countries, NUTS-2 for European regions, `US`/`CN` + code for US and Canadian metropolitan areas |
+| `name` | Place name |
+| `country` | ISO3 code of the country the place belongs to |
+| `level` | `country` or `region` |
+| `year` | Year, 1300–2000 in 50-year steps |
+| `gdppc` | GDP per capita, 2011 international dollars |
+| `lower`, `upper` | 90% confidence interval (estimates only) |
+| `estimated` | `TRUE` for model estimates, `FALSE` for source data |
+| `source` | Data source, or "Out-of-sample estimate" |
+
+## How to cite {#how-to-cite}
+
+If you use the data, please cite the paper:
+
+> Koch, P., Stojkoski, V., & Hidalgo, C. A. (2024). Augmenting the availability of historical GDP per capita estimates through machine learning. *Proceedings of the National Academy of Sciences*, 121(39), e2402060121. <https://doi.org/10.1073/pnas.2402060121>
+
+```bibtex
+@article{koch2024augmenting,
+  title   = {Augmenting the availability of historical {GDP} per capita
+             estimates through machine learning},
+  author  = {Koch, Philipp and Stojkoski, Viktor and Hidalgo, C{\'e}sar A.},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {121},
+  number  = {39},
+  pages   = {e2402060121},
+  year    = {2024},
+  doi     = {10.1073/pnas.2402060121}
+}
+```
+
+When you use the source data, please also cite the original sources listed in the paper.
+
+The data are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/){target="_blank"}.

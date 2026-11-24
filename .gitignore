@@ -1,0 +1,17 @@
+# Quarto render output
+_site/
+.quarto/
+
+# Locally archived binary material. Keep the manifests and documentation.
+archive/snapshots/*/downloads/
+archive/snapshots/*/source-pages/
+
+# Local operating-system files
+.DS_Store
+Thumbs.db
+
+/.quarto/
+**/*.quarto_ipynb
+
+# Former Shinylive app (own git repo; source of tools/build-gdp-data.R)
+historicalGDPpc_app/
