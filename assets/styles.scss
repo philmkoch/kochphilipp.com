@@ -1,29 +1,32 @@
 /*-- scss:defaults --*/
-// Terracotta palette, shared by the homepage (assets/designs/terracotta.css) and all inner pages.
-$body-bg: #fbf3e8;
-$body-color: #302730;
-$primary: #a54a2f;
-$link-color: #a54a2f;
-$headings-font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
-$headings-font-weight: 400;
-$font-family-sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-$navbar-bg: #fbf3e8;
-$footer-bg: #fbf3e8;
-$code-bg: #f3e8da;
+// Ledger palette and type, shared by the homepage (assets/designs/terracotta.css) and all inner pages.
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+$body-bg: #fbfbf9;
+$body-color: #161616;
+$primary: #b8141a;
+$link-color: #b8141a;
+$headings-font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+$headings-font-weight: 500;
+$font-family-sans-serif: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+$font-family-monospace: "IBM Plex Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+$navbar-bg: #fbfbf9;
+$footer-bg: #fbfbf9;
+$code-bg: #efefea;
 
 /*-- scss:rules --*/
 :root {
-  --ink: #302730;
-  --paper: #fbf3e8;
-  --accent: #a54a2f;     // text-safe clay (4.7:1 on paper)
-  --clay: #b8583b;       // decorative clay for rules and borders
-  --muted: #6a5c65;
-  --rule: #d9cbbc;
-  --tint: #f3e6d6;
+  --ink: #161616;
+  --paper: #fbfbf9;
+  --accent: #b8141a;     // text-safe signal red (6.4:1 on paper)
+  --clay: #e02a1f;       // decorative red for rules and borders
+  --muted: #5b5b57;
+  --rule: #d9d9d3;
+  --tint: #efefea;
+  --mono: #{$font-family-monospace};
 }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, #title-block-header .title, .quarto-title .title {
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   letter-spacing: -0.025em;
   color: var(--ink);
 }
@@ -52,13 +55,14 @@ a:hover { text-decoration-color: var(--accent); }
 .navbar .navbar-title {
   font-family: $headings-font-family;
   font-size: 1.18rem;
-  font-weight: 700;
-  letter-spacing: -.03em;
+  font-weight: 600;
+  letter-spacing: -.02em;
 }
 
 .navbar .navbar-nav .nav-link .menu-text {
+  font-family: var(--mono);
   font-size: .75rem;
-  letter-spacing: .04em;
+  letter-spacing: .02em;
   text-transform: uppercase;
 }
 
@@ -76,7 +80,7 @@ a:hover { text-decoration-color: var(--accent); }
 .btn.btn-primary, .btn.btn-outline-dark {
   padding: .22rem .65rem;
   border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
-  border-radius: 4px;
+  border-radius: 0;
   background: transparent;
   color: var(--accent);
   font-size: .84rem;
@@ -128,7 +132,7 @@ img.about-snooker {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 img.about-portrait {
@@ -138,7 +142,7 @@ img.about-portrait {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 50% 15%;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .about-portrait-placeholder {
@@ -204,7 +208,7 @@ a.data-title:hover { color: var(--accent); }
   gap: .35rem;
   padding: .22rem .65rem;
   border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
-  border-radius: 4px;
+  border-radius: 0;
   color: var(--accent);
   font-size: .84rem;
   text-decoration: none;
@@ -228,10 +232,10 @@ a.data-title:hover { color: var(--accent); }
 }
 
 .gdp-year { display: grid; gap: .15rem; flex: 1 1 16rem; margin: 0; font-size: .85rem; }
-.gdp-year output { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--accent); font-size: 1.05rem; }
+.gdp-year output { font-family: var(--mono); font-weight: 500; font-variant-numeric: tabular-nums; color: var(--accent); font-size: 1.05rem; }
 .gdp-year input { width: 100%; accent-color: var(--accent); }
 
-.gdp-segment { display: inline-flex; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+.gdp-segment { display: inline-flex; border: 1px solid var(--rule); border-radius: 0; overflow: hidden; }
 .gdp-segment button {
   padding: .3rem .7rem;
   border: 0;
@@ -248,8 +252,8 @@ a.data-title:hover { color: var(--accent); }
 .gdp-map {
   height: clamp(340px, 62vh, 560px);
   border: 1px solid var(--rule);
-  border-radius: 4px;
-  background: #f1e8dc;
+  border-radius: 0;
+  background: var(--tint);
 }
 
 .gdp-status {
@@ -270,12 +274,12 @@ a.data-title:hover { color: var(--accent); }
   padding: .5rem .65rem .4rem;
   background: rgba(255, 255, 255, .92);
   border: 1px solid var(--rule);
-  border-radius: 4px;
+  border-radius: 0;
   font-size: .72rem;
 }
 .gdp-legend:empty { display: none; }
 .gdp-legend-title { margin-bottom: .3rem; font-weight: 700; }
-.gdp-legend-bar { height: .55rem; border-radius: 2px; }
+.gdp-legend-bar { height: .55rem; border-radius: 0; }
 .gdp-legend-ticks { display: flex; justify-content: space-between; margin-top: .2rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 .gdp-tip { font-size: .8rem; line-height: 1.4; }
@@ -290,7 +294,7 @@ a.data-title:hover { color: var(--accent); }
   flex: 0 1 18rem;
   padding: .32rem .6rem;
   border: 1px solid var(--rule);
-  border-radius: 4px;
+  border-radius: 0;
   background: #fff;
   font-size: .88rem;
 }
@@ -325,7 +329,7 @@ a.data-title:hover { color: var(--accent); }
 .gdp-link-button {
   padding: .25rem .65rem;
   border: 1px solid var(--rule);
-  border-radius: 4px;
+  border-radius: 0;
   background: transparent;
   color: var(--ink);
   font-size: .82rem;
@@ -335,5 +339,5 @@ a.data-title:hover { color: var(--accent); }
 .gdp-explorer :focus-visible { outline: 2px solid var(--clay); outline-offset: 2px; }
 
 /* Publications: years (h3) and paper titles (h4) inside the peer-reviewed section. */
-#peer-reviewed-research h3 { margin-top: 2.2rem; font-size: 1.5rem; }
+#peer-reviewed-research h3 { margin-top: 2.2rem; font-family: var(--mono); font-size: 1.3rem; }
 #peer-reviewed-research h4 { margin-top: 1.6rem; font-size: 1.2rem; line-height: 1.35; }

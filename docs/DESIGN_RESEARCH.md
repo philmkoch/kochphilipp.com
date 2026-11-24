@@ -68,3 +68,7 @@ Consulted 23 November 2026. Page text was checked with automated fetches, so vis
 - ML-imputed values are visually distinct from observed values.
 - The explorer is built from pre-computed static JSON/TopoJSON, using Quarto OJS with Observable Plot and a lightweight map. The current Shinylive (webR) app loads R, `sf`, `leaflet`, `plotly` and an 8 MB bundle in the browser on every visit, which is why it is slow on any host.
 - Publications should move into a structured data file and be rendered as a Quarto listing with a uniform link row.
+
+## Ledger palette and type (November 2026)
+
+The Terracotta layout now uses the Ledger palette and type, chosen from a set of local alternatives: IBM Plex Sans for text and headings, IBM Plex Mono for navigation, venues, and dates, near-white paper (`#fbfbf9`), near-black ink (`#161616`), and a single signal red (`#b8141a`, 6.4:1 on paper). Corners are square and the selected-work items sit on hairline rules rather than cards. This replaces the earlier system-font pair, so the site now loads IBM Plex from Google Fonts. The GDP map keeps its warm colour ramp, set in `assets/gdp-explorer.js`.

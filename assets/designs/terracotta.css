@@ -1,15 +1,15 @@
-/* Option 1: a warm, centred reading room. */
-body.terracotta { --ink: #302730; --paper: #fbf3e8; --clay: #a54a2f; --line: #d9cbbc; background: var(--paper); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+/* Homepage stylesheet. Palette and type: Ledger (statistical-yearbook voice, IBM Plex, signal red). */
+body.terracotta { --ink: #161616; --paper: #fbfbf9; --clay: #b8141a; --line: #d9d9d3; --muted: #5b5b57; --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace; background: var(--paper); color: var(--ink); font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
 body.terracotta #title-block-header, body.terracotta .quarto-title, body.terracotta .anchorjs-link { display: none; }
 body.terracotta #quarto-content, body.terracotta main.content { margin: 0; max-width: none; padding: 0 !important; }
 body.terracotta .option-shell, body.terracotta .option-shell.page-columns { display: flex; flex-direction: column; box-sizing: border-box; max-width: 1100px; margin: 0 auto; padding: 0 clamp(1.4rem, 5vw, 4.5rem); }
 body.terracotta .option-shell h1, body.terracotta .option-shell p { color: inherit; }
-body.terracotta .option-shell h1 { font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 400; letter-spacing: -.04em; }
+body.terracotta .option-shell h1 { font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif; font-weight: 400; letter-spacing: -.04em; }
 body.terracotta .option-shell a { color: inherit; text-decoration-color: var(--clay); text-decoration-thickness: 1px; text-underline-offset: .23em; }
 body.terracotta .option-shell a:hover { color: var(--clay); }
 body.terracotta .option-shell a:focus-visible { outline: 3px solid var(--clay); outline-offset: 4px; }
 body.terracotta .option-header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; align-items: center; min-height: 4.75rem; border-bottom: 1px solid var(--line); }
-body.terracotta .wordmark { font-family: Georgia, serif; font-size: 1.18rem; font-weight: 700; letter-spacing: -.03em; text-decoration: none; }
+body.terracotta .wordmark { font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.18rem; font-weight: 700; letter-spacing: -.03em; text-decoration: none; }
 body.terracotta .option-header nav { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; }
 body.terracotta .option-header nav a { text-decoration: none; }
 body.terracotta main { flex: 1; display: flex; flex-direction: column; }
@@ -17,23 +17,23 @@ body.terracotta .hero { display: block; position: relative; max-width: 43rem; ma
 body.terracotta .eyebrow { margin: 0 0 .9rem; color: var(--clay) !important; font-size: .88rem; font-weight: 400; letter-spacing: .02em; text-transform: none; }
 body.terracotta .hero h1 { margin: 0; font-size: clamp(2.8rem, 5vw, 4.25rem); line-height: 1; }
 body.terracotta .hero > p:not(.eyebrow):not(.hero-links):not(.academic-role) { max-width: 36rem; margin: 1.35rem auto 0; font-size: clamp(1rem, 1.5vw, 1.12rem); line-height: 1.65; }
-body.terracotta .hero > p.academic-role { margin: .75rem auto 0; color: #715f67 !important; font-size: .82rem; font-weight: 400; letter-spacing: 0; line-height: 1.5; text-transform: none; }
+body.terracotta .hero > p.academic-role { margin: .75rem auto 0; color: var(--muted) !important; font-size: .82rem; font-weight: 400; letter-spacing: 0; line-height: 1.5; text-transform: none; }
 body.terracotta .hero-portrait-placeholder { position: absolute; top: 48%; right: clamp(-9rem, -10.5vw, -7rem); display: grid; width: clamp(6.25rem, 8vw, 7.5rem); aspect-ratio: 3 / 5; place-content: center; gap: .28rem; border: 1px solid var(--clay); color: var(--clay); font-size: .66rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-body.terracotta .hero-portrait-placeholder small { color: #806e76; font-size: .58rem; font-weight: 400; letter-spacing: .08em; }
+body.terracotta .hero-portrait-placeholder small { color: var(--muted); font-size: .58rem; font-weight: 400; letter-spacing: .08em; }
 body.terracotta .hero-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem; margin: 2.1rem 0 0; font-size: .86rem; font-weight: 700; }
 body.terracotta .hero-links a { padding-bottom: .25rem; text-decoration: none; border-bottom: 1px solid var(--clay); }
 body.terracotta .hero-links span { color: var(--clay); }
 body.terracotta .research-paths { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 body.terracotta .research-paths a { padding: 1rem; font-size: .82rem; text-align: center; text-decoration: none; }
 body.terracotta .research-paths a + a { border-left: 1px solid var(--line); }
-body.terracotta .research-paths span { margin-right: .45rem; color: var(--clay); font-family: Georgia, serif; }
-body.terracotta .news-feed { max-width: 42rem; margin: .4rem auto 0; border-top: 1px solid var(--line); color: #6a5c65; }
-body.terracotta .news-feed > h2 { margin: 1.4rem 0 .15rem; color: var(--ink) !important; font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; font-size: 1.65rem; font-weight: 400; letter-spacing: -.025em; }
+body.terracotta .research-paths span { margin-right: .45rem; color: var(--clay); font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif; }
+body.terracotta .news-feed { max-width: 42rem; margin: .4rem auto 0; border-top: 1px solid var(--line); color: var(--muted); }
+body.terracotta .news-feed > h2 { margin: 1.4rem 0 .15rem; color: var(--ink) !important; font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.65rem; font-weight: 400; letter-spacing: -.025em; }
 body.terracotta .news-feed article { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; padding: .75rem 0 0; }
-body.terracotta .news-feed time { color: #806e76; font-size: .76rem; }
-body.terracotta .news-feed article h2, body.terracotta .news-feed article h3 { margin: 0; font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; font-size: 1.05rem; font-weight: 400; letter-spacing: -.01em; }
+body.terracotta .news-feed time { color: var(--muted); font-size: .76rem; }
+body.terracotta .news-feed article h2, body.terracotta .news-feed article h3 { margin: 0; font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.05rem; font-weight: 400; letter-spacing: -.01em; }
 body.terracotta .news-feed article p { margin: .25rem 0 0; font-size: .8rem; line-height: 1.5; }
-body.terracotta .option-footer { display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem 1.25rem; padding: 2.5rem 0 1.6rem; color: #715f67; font-size: .75rem; }
+body.terracotta .option-footer { display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem 1.25rem; padding: 2.5rem 0 1.6rem; color: var(--muted); font-size: .75rem; }
 
 @media (max-width: 760px) { body.terracotta .hero-portrait-placeholder { position: static; width: 6.25rem; margin: 2rem auto 0; } }
 @media (max-width: 580px) { body.terracotta .option-header { justify-content: center; padding: 1rem 0; } body.terracotta .option-header nav { justify-content: center; } body.terracotta .hero { padding-top: 4.5rem; } body.terracotta .research-paths { grid-template-columns: 1fr; } body.terracotta .research-paths a + a { border-left: 0; border-top: 1px solid var(--line); } body.terracotta .news-feed article { grid-template-columns: 1fr; gap: .25rem; } }
@@ -41,19 +41,30 @@ body.terracotta .option-footer { display: flex; justify-content: center; flex-wr
 /* Two-column hero with portrait, selected work, and news (Nov 2026 revision). */
 body.terracotta .hero h1 { font-size: clamp(2.6rem, 4.6vw, 3.9rem); max-width: 14ch; }
 body.terracotta .hero .hero-lede { max-width: 36rem; margin: 1.25rem 0 0; font-size: clamp(1rem, 1.4vw, 1.1rem); line-height: 1.65; }
-body.terracotta .hero .academic-role { margin: .9rem 0 0 !important; color: #715f67 !important; font-size: .82rem; line-height: 1.5; }
+body.terracotta .hero .academic-role { margin: .9rem 0 0 !important; color: var(--muted) !important; font-size: .82rem; line-height: 1.5; }
 body.terracotta .hero .hero-links { justify-content: flex-start; margin-top: 1.5rem; }
-body.terracotta .hero-portrait { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 8%; border-radius: 3px; box-shadow: 0 1px 0 var(--line), 0 12px 32px -18px rgba(48, 39, 48, .45); }
+body.terracotta .hero-portrait { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 8%; border-radius: 3px; box-shadow: 0 1px 0 var(--line), 0 12px 32px -18px rgba(0, 0, 0, .35); }
 body.terracotta .selected-work { border-top: 1px solid var(--line); padding: 1.2rem 0 1.6rem; }
-body.terracotta .selected-work > h2, body.terracotta .news-feed > h2 { margin: .2rem 0 .8rem; color: var(--ink) !important; font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; font-size: 1.65rem; font-weight: 400; letter-spacing: -.025em; }
+body.terracotta .selected-work > h2, body.terracotta .news-feed > h2 { margin: .2rem 0 .8rem; color: var(--ink) !important; font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.65rem; font-weight: 400; letter-spacing: -.025em; }
 body.terracotta .selected-work ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
 body.terracotta .selected-work li a { display: flex; flex-direction: column; gap: .35rem; height: 100%; padding: 1rem 1rem 1.1rem; border: 1px solid var(--line); border-top: 3px solid var(--clay); border-radius: 3px; background: rgba(255, 255, 255, .45); text-decoration: none; transition: background .15s, transform .15s; }
 body.terracotta .selected-work li a:hover { background: #fff; transform: translateY(-2px); color: inherit; }
 body.terracotta .selected-work .venue { color: var(--clay); font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; }
-body.terracotta .selected-work strong { font-family: Georgia, "Iowan Old Style", serif; font-size: 1.08rem; font-weight: 400; line-height: 1.3; }
-body.terracotta .selected-work li span:last-child { color: #6a5c65; font-size: .82rem; line-height: 1.5; }
+body.terracotta .selected-work strong { font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif; font-size: 1.08rem; font-weight: 400; line-height: 1.3; }
+body.terracotta .selected-work li span:last-child { color: var(--muted); font-size: .82rem; line-height: 1.5; }
 body.terracotta .selected-work .more { margin: 1rem 0 0; font-size: .82rem; }
 body.terracotta .news-feed { max-width: none; margin: 0; padding-top: 1.2rem; }
 body.terracotta .news-feed article { padding: .6rem 0 .35rem; }
 @media (max-width: 760px) { body.terracotta .selected-work ol { grid-template-columns: 1fr; } }
 body.terracotta .news-feed article h3 { color: var(--ink) !important; }
+
+/* Ledger finish: medium-weight grotesque headings, mono labels, hairline rules instead of cards. */
+body.terracotta .option-shell h1, body.terracotta .selected-work > h2, body.terracotta .news-feed > h2,
+body.terracotta .news-feed article h3, body.terracotta .selected-work strong { font-weight: 500; letter-spacing: -.025em; }
+body.terracotta .hero h1 { font-size: clamp(2.8rem, 5.2vw, 4.4rem); letter-spacing: -.045em; }
+body.terracotta .hero .academic-role a, body.terracotta .news-feed article p a, body.terracotta .selected-work .more a { color: var(--clay); }
+body.terracotta .hero-portrait { border-radius: 0; box-shadow: none; }
+body.terracotta .selected-work li a { padding: 1rem 0 1.1rem; border: 0; border-top: 1px solid var(--ink); border-radius: 0; background: transparent; }
+body.terracotta .selected-work li a:hover { background: transparent; transform: none; }
+body.terracotta .selected-work .venue, body.terracotta .news-feed time { font-family: var(--mono); letter-spacing: .02em; }
+body.terracotta .news-feed article { border-top: 1px solid var(--line); }
