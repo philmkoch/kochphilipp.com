@@ -33,7 +33,7 @@ website:
         text: About
     right:
       - text: CV
-        href: s/CV_PK-8.pdf
+        href: s/CV_PK.pdf
       - icon: envelope
         aria-label: Email Philipp Koch
         href: "mailto:philipp.koch@ecoaustria.ac.at"

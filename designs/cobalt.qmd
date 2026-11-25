@@ -14,7 +14,7 @@ format:
 <link rel="stylesheet" href="../assets/designs/cobalt.css?design=20260915-sparse">
 <link rel="stylesheet" href="../assets/designs/minimal-override.css?design=20260915-sparse">
 <div class="option-shell">
-<header class="option-header"><a class="wordmark" href="../index.html">Philipp Koch</a><nav aria-label="Primary navigation"><a href="../publications.html">Writing</a><a href="../policy.html">Policy</a><a href="../about.html">About</a><a href="../s/CV_PK-8.pdf">CV</a></nav><a class="contact" href="mailto:philipp.koch@ecoaustria.ac.at">Contact ↗</a></header>
+<header class="option-header"><a class="wordmark" href="../index.html">Philipp Koch</a><nav aria-label="Primary navigation"><a href="../publications.html">Writing</a><a href="../policy.html">Policy</a><a href="../about.html">About</a><a href="../s/CV_PK.pdf">CV</a></nav><a class="contact" href="mailto:philipp.koch@ecoaustria.ac.at">Contact ↗</a></header>
 <main>
 <section class="hero" aria-labelledby="cobalt-title"><p class="folio">Research profile · Vienna</p><div><p class="eyebrow">Economist · Data Scientist</p><h1 id="cobalt-title">Finding the structure behind economic change.</h1><p>I work across development, trade, innovation, and economic history.</p></div></section>
 <ol class="research-index" aria-label="Selected research"><li><a href="../publications.html#historical-gdp"><span>01</span><strong>Historical GDP</strong><b aria-hidden="true">→</b></a></li><li><a href="../publications.html#digital-trade"><span>02</span><strong>Digital trade</strong><b aria-hidden="true">→</b></a></li><li><a href="../publications.html#value-chains"><span>03</span><strong>Value chains</strong><b aria-hidden="true">→</b></a></li></ol>

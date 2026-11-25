@@ -14,7 +14,7 @@ format:
 <link rel="stylesheet" href="../assets/designs/terracotta.css?design=20260921-juhasz">
 <link rel="stylesheet" href="../assets/designs/minimal-override.css?design=20260921-juhasz">
 <div class="option-shell">
-<header class="option-header"><a class="wordmark" href="../index.html">Philipp Koch</a><nav aria-label="Primary navigation"><a href="../publications.html">Publications</a><a href="../policy.html">Policy</a><a href="../about.html">About</a><a href="../s/CV_PK-8.pdf">CV</a></nav></header>
+<header class="option-header"><a class="wordmark" href="../index.html">Philipp Koch</a><nav aria-label="Primary navigation"><a href="../publications.html">Publications</a><a href="../policy.html">Policy</a><a href="../about.html">About</a><a href="../s/CV_PK.pdf">CV</a></nav></header>
 <main>
 <section class="hero" aria-labelledby="terracotta-title"><p class="eyebrow">Economist · Data Scientist · Vienna</p><h1 id="terracotta-title">How economies develop, connect, and change.</h1><p>I study economic development, trade, innovation, and history with data and empirical methods.</p><p class="academic-role">Head of Data Science, EcoAustria · Lecturer, WU Vienna</p><div class="hero-portrait-placeholder" role="img" aria-label="Tall portrait placeholder for Philipp Koch"><span>Portrait</span><small>3:5</small></div></section>
 <section class="news-feed" aria-labelledby="terracotta-news"><h2 id="terracotta-news">News</h2><article><time datetime="2026-09-16">16 Sep 2026</time><div><h3>A new home for the work</h3><p>This site is being rebuilt to make current research, publications, and policy work easier to find.</p></div></article></section>

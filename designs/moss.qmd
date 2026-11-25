@@ -14,7 +14,7 @@ format:
 <link rel="stylesheet" href="../assets/designs/moss.css?design=20260915-sparse">
 <link rel="stylesheet" href="../assets/designs/minimal-override.css?design=20260915-sparse">
 <div class="option-shell">
-<header class="option-header"><a class="wordmark" href="../index.html"><span>PK</span> Philipp Koch</a><nav aria-label="Primary navigation"><a href="../publications.html">Publications</a><a href="../policy.html">Policy</a><a href="../about.html">About</a><a href="../s/CV_PK-8.pdf">CV</a></nav></header>
+<header class="option-header"><a class="wordmark" href="../index.html"><span>PK</span> Philipp Koch</a><nav aria-label="Primary navigation"><a href="../publications.html">Publications</a><a href="../policy.html">Policy</a><a href="../about.html">About</a><a href="../s/CV_PK.pdf">CV</a></nav></header>
 <main>
 <section class="hero" aria-labelledby="moss-title"><p class="eyebrow">Economist · Data Scientist</p><h1 id="moss-title">Economic change leaves traces.</h1><p>I learn from them across development, trade, innovation, and history.</p></section>
 <section class="research-paths" aria-label="Selected research"><a href="../publications.html#historical-gdp"><span>I</span> Historical GDP</a><a href="../publications.html#digital-trade"><span>II</span> Digital trade</a><a href="../publications.html#value-chains"><span>III</span> Value chains</a></section>

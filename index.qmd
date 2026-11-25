@@ -18,7 +18,7 @@ format:
 <h1 id="home-title">Hi, I&rsquo;m Philipp.</h1>
 <p class="hero-lede">I&rsquo;m an economist and data scientist in Vienna. I use machine learning and other empirical methods to understand economic development, drawing on conventional economic data as well as unconventional sources such as the biographies of famous people.</p>
 <p class="academic-role">Head of Data Science, <a href="https://ecoaustria.ac.at/">EcoAustria</a> · Lecturer, WU Vienna · Affiliate, <a href="https://centerforcollectivelearning.org/">Center for Collective Learning</a></p>
-<p class="hero-links"><a href="about.html">About me</a><a href="https://scholar.google.com/citations?user=FHMRb28AAAAJ">Google Scholar</a><a href="s/CV_PK-8.pdf">CV</a></p>
+<p class="hero-links"><a href="about.html">About me</a><a href="https://scholar.google.com/citations?user=FHMRb28AAAAJ">Google Scholar</a><a href="s/CV_PK.pdf">CV</a></p>
 </div>
 <img class="hero-portrait" src="assets/images/philipp-koch-casual-600.jpg" srcset="assets/images/philipp-koch-casual-600.jpg 600w, assets/images/philipp-koch-casual-1000.jpg 1000w" sizes="(max-width: 760px) 11rem, 16rem" width="600" height="1025" alt="Philipp Koch leaning on a railing by the water under a willow tree">
 </section>
