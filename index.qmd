@@ -34,6 +34,7 @@ format:
 <section class="news-feed" aria-labelledby="news-heading">
 <h2 id="news-heading">News</h2>
 <!-- Add future items above this one, using the same article structure. -->
+<article><time datetime="2026-11">Nov 2026</time><div><h3>Grokipedia stretches the US political spectrum</h3><p>New <a href="publications.html#grokipedia">working paper</a> with A. Posztos, also out as EcoAustria Research Paper 37.</p></div></article>
 <article><time datetime="2026-11">Nov 2026</time><div><h3>Historical GDP explorer moves to this site</h3><p>The <a href="data/historical-gdp/index.html">interactive explorer</a> for our PNAS dataset now loads in seconds, with downloads and shareable views.</p></div></article>
 <article><time datetime="2026">2026</time><div><h3>Economic effects of data centres</h3><p>New <a href="policy.html#economic-effects-of-data-centres">study for the Vienna Business Agency</a>.</p></div></article>
 <article><time datetime="2026">2026</time><div><h3>Computing capacity and digital competitiveness</h3><p>New <a href="policy.html#computing-capacity-as-a-driver-of-digital-competitiveness">EcoAustria Policy Note 66</a> with N. Graf and S. Rabong.</p></div></article>

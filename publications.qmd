@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-subtitle: "Highlights and peer-reviewed research"
+subtitle: "Highlights, working papers, and peer-reviewed research"
 toc: true
 ---
 
@@ -27,6 +27,17 @@ Peer-reviewed work on measuring economies with new data, economic complexity, th
 *Economics Letters, 2021.* Introduced a value-added export approach to economic complexity, motivated by global value chains, whose rankings explain growth better than gross-export measures. [Publication](#value-added-complexity)
 :::
 :::
+
+## Working papers {#working-papers}
+
+#### Grokipedia stretches the US political spectrum {#grokipedia}
+
+Koch, P., & Posztos, A. (2026). *Grokipedia stretches the US political spectrum.* arXiv:2611.32420. Also published as EcoAustria Research Paper 37.
+
+We compare the biographies of 1,614 current and former Democratic and Republican politicians on Grokipedia and Wikipedia. Grokipedia does not favour one party. Instead, it stretches the political spectrum: the more conservative a politician's voting record, the more conservative the biography reads, and this relationship is about twice as steep on Grokipedia as on Wikipedia.
+
+[arXiv](https://arxiv.org/abs/2611.32420){.btn .btn-primary target="_blank"}
+[EcoAustria Research Paper — German summary](https://ecoaustria.ac.at/research-paper-37-grokipedia-erweitert-das-politische-spektrum-in-den-usa/){.btn .btn-outline-dark target="_blank"}
 
 ## Peer-reviewed research {#peer-reviewed-research}
 
