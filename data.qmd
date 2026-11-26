@@ -4,9 +4,7 @@ subtitle: "Open datasets and interactive explorers"
 toc: false
 ---
 
-Datasets from my research, free to use and reuse under open licences, with an interactive explorer, a direct download, and the paper describing how they were built. Replication code is on [GitHub](https://github.com/philmkoch){target="_blank"}.
-
-::: {.data-list}
+::: {.data-list .column-page}
 
 ::: {.data-entry}
 [Historical GDP per capita for Europe and North America, 1300–2000](data/historical-gdp/index.qmd){.data-title}
@@ -21,6 +19,19 @@ Machine-learning estimates of GDP per capita for 1,037 countries and regions, in
 [[]{.bi .bi-github} Code & Data](https://github.com/philmkoch/historicalGDPpc){target="_blank"}
 [[]{.bi .bi-download} CSV](data/historical-gdp/historical-gdppc.csv){download="historical-gdppc.csv"}
 [[]{.bi .bi-quote} Cite](data/historical-gdp/index.qmd#how-to-cite)
+:::
+:::
+
+::: {.data-entry}
+[Starcatcher: the ingredient space of fine dining](https://starcatcher.eu/){.data-title target="_blank"}
+
+Dahlke, J., & Koch, P. (2026). Starcatcher. The ingredient space of fine dining. *Research platform, methods and data appendix*. https://starcatcher.eu
+
+An interactive research atlas built together with Johannes Dahlke. We map more than 150,000 dishes from around 640 MICHELIN-listed kitchens in eight regions in Europe and the US into one ingredient space, using methods from economic complexity, to see which ingredients are rising or fading on menus and what predicts a star. The platform is at an early research stage and the data, built from public sources, are provisional.
+
+::: {.data-links}
+[[]{.bi .bi-map} Explore](https://starcatcher.eu/){target="_blank"}
+[[]{.bi .bi-file-earmark-text} Methods & data appendix](https://starcatcher.eu/methods_appendix.html){target="_blank"}
 :::
 :::
 

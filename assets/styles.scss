@@ -172,11 +172,28 @@ img.about-portrait {
 }
 
 /* --- Data tab (list of datasets, Helveston-style link rows) ---------------- */
-.data-list { margin-top: 2rem; border-top: 1px solid var(--rule); }
+/* Entries sit side by side as two cards, one column on narrow screens. */
+.data-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
 
 .data-entry {
-  padding: 1.6rem 0 1.7rem;
-  border-bottom: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.3rem 1.6rem;
+  border: 1px solid var(--rule);
+}
+
+.data-entry .data-links { margin-top: auto; }
+.data-entry .data-links p { gap: .3rem; }
+.data-entry .data-links a { padding: .22rem .5rem; }
+
+@media (max-width: 767.98px) {
+  .data-list { grid-template-columns: minmax(0, 1fr); }
+  .data-entry { padding: 1.3rem 1.2rem 1.4rem; }
 }
 
 .data-entry p { margin: 0 0 .6rem; line-height: 1.6; }
